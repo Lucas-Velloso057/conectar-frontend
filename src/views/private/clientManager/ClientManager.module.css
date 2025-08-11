@@ -1,0 +1,17 @@
+.contentWrapper {
+  padding: 24px 32px;
+  background-color: #f4f6f8;
+  min-height: calc(100vh - 64px);
+}
+
+.pageTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #343a40;
+  margin: 0 0 24px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+}

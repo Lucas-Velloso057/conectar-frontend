@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 24px;
+  background-color: #19af78;
+  color: #ffffff;
+  height: 64px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navigation {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  height: 100%;
+}
+
+.navLink {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 16px; 
+  width: auto; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  height: 3px;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+
+}
+
+.navLink.active::after {
+  background-color: #ffffff;
+}
+
+.userActions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconButton {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.iconButton:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.hamburgerButton {
+  display: none; 
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .hamburgerButton {
+    display: block;
+  }
+
+  .navOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #19af78; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navOpen .navList {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navOpen .navLink {
+    justify-content: flex-start;
+    padding: 16px 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navOpen .navLink::after {
+    display: none;
+  }
+}

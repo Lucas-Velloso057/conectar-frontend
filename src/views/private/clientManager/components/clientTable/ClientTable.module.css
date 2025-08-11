@@ -1,0 +1,91 @@
+.tableContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9ecef;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.titleGroup h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.titleGroup p {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.novoButton {
+  padding: 8px 24px;
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.novoButton:hover {
+  background-color: #e9ecef;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #19af78;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.table tbody tr {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+  color: #495057;
+  vertical-align: middle;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+

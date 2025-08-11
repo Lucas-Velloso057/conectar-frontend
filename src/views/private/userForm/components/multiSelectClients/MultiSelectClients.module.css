@@ -1,0 +1,78 @@
+.multiSelectContainer {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: #f8f9fa;
+}
+
+.selectedItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  background-color: #19af78;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+}
+
+.pill button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchWrapper input {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font-size: 0.95rem;
+}
+
+.searchWrapper input:focus {
+  outline: none;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f1f3f5;
+}
+
+.noResults {
+  padding: 10px;
+  color: #6c757d;
+}
