@@ -4,7 +4,7 @@ import { useAuth } from 'src/contexts/AuthContext';
 import { InfoCadastraisForm } from './components/infoCadastrais/InfoCadastraisForm';
 import { mockClients } from 'src/data/mockClients';
 import { IClient } from 'src/interfaces/IClient';
-import styles from './ClientFormPage.module.css';
+import styles from './ClientFormpage.module.css';
 
 type ActiveTab = 'dadosCadastrais' | 'informacoesInternas' | 'usuarios';
 
